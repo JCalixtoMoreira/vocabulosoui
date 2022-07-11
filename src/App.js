@@ -1,48 +1,24 @@
-import Select from 'react-select'
-import HelpIcon from '@mui/icons-material/Help';
-import Button from '@mui/material/Button';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import './App.css';
+import Home from "./components/Home";
+import Settings from "./components/Settings";
+import Help from "./components/Help";
+import Game from "./components/Game";
 
-const options = []
-for(var i=3; i<=23; i++) {
-  options.push({ value: i.toString(), label:  i.toString() },);
-}
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header >
-        <HelpIcon />
-      </header>
-      <body>
-        <div className="logo"> 
-          <h1>Vocabuloso</h1>
-        </div>
-        <div className="opcoes">
-          <div className="linha">
-            <p>Número de Letras</p>
-            <Select className="numLetras" options={options} />
-          </div>
-          <div className="linha">
-            <p>Número de Palavras</p>
-            <Select className="numPalavras" options={options} />
-          </div>
-          <div className="linha">
-            <p>Número de Tentativas</p>
-            <Select className="numTentativas" options={options} />
-          </div>
-          <div className="buttons">
-            <Button variant="contained">Iniciar</Button>
-            <Button variant="contained">Configurações</Button>
-          </div>
-        </div>
-      </body>
-      <footer>
-
-      </footer>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/game/:tamanho/:qtd/:tentativas" element={<Game />} />
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
