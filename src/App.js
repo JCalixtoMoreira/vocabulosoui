@@ -16,6 +16,7 @@ function App() {
         <HelpIcon />
       </header>
       <body>
+        
         <div className="logo"> 
           <h1>Vocabuloso</h1>
         </div>
