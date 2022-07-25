@@ -6,12 +6,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const optionsLetras = [{ value: '', lavel: '' }];
-for (var i = 3; i <= 10; i++) {
+for (var i = 3; i <= 20; i++) {
     optionsLetras.push({ value: i.toString(), label: i.toString() },);
 }
 
 const optionsPalavras = [{ value: '', lavel: '' }];
-for (i = 1; i <= 5; i++) {
+for (i = 1; i <= 20; i++) {
     optionsPalavras.push({ value: i.toString(), label: i.toString() },);
 }
 
@@ -27,12 +27,9 @@ const Home = () => {
     const [tentativaOn, setTentativaOn] = useState("disabled")
     const navigate = useNavigate();
 
-    const navigateSettings = () => {
-        navigate('/settings');
-    };
-
     const navigateGame = () => {
-        navigate(`/game/${tamanho}/${quantidade}/${tentativa}`);
+        if(tamanho > 0 && quantidade > 0 && tentativa > 0) navigate(`/game/${tamanho}/${quantidade}/${tentativa}`);
+        else alert("Selecione um valor para os campos de Número de Letras, Palavras e Tentativas");
     };
 
     const handleChangeTamanho = event => {
@@ -89,7 +86,6 @@ const Home = () => {
                     </div>
                     <div className="buttons">
                         <Button onClick={navigateGame} variant="contained">Iniciar</Button>
-                        <Button onClick={navigateSettings} variant="contained">Configurações</Button>
                     </div>
                 </div>
             </body>
