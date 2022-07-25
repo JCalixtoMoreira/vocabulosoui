@@ -22,8 +22,8 @@ function App() {
         </div>
         <div className="opcoes">
           <div className="linha">
-            <p>Número de Letras</p>
             <Select className="numLetras" options={options} />
+            <p>Número de Letras</p>
           </div>
           <div className="linha">
             <p>Número de Palavras</p>
