@@ -1,21 +1,21 @@
+
 .App {
-    background-color: grey;
+    background-color: #FFFFFF;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: #439603;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 25px;
-    margin: 0px auto;
-    width: 80%;
+    font-size: 18px;
+    margin: 20px auto;
+    width: 100%;
     position: relative;
-
+    border-radius: 80px;
 }
 
 html {
-    background-color: grey;
+    background-color: #FFFFFF;
 }
 
 body {
@@ -27,20 +27,21 @@ body {
 }
 
 #root {
-    background-color: grey;
+    background-color: #FFFFFF;
 }
 
-.logo {
-    color: black;
+ .logo {
+    color: #439603;
     font-family: Helvetica;
     display: block;
     width: center;
-    height: fit-content;
+    height:fit-content;
     text-align: center;
-}
+    margin-top: -100px;
+} 
 
 .opcoes {
-    background-color: rgb(24, 10, 101);
+    background-color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
     text-indent: 10px;
@@ -50,19 +51,22 @@ body {
     display: block;
     font-size: 18px;
     border-radius: 80px;
-    margin: 40px auto;
-    width: 50%;
+    margin: auto;
+    height:400px ;
+    width: 40%;
     font-family: Helvetica;
 }
 
-.linha{
+.linha {
     color: black;
     display: flex;
 }
 
-p{
-    text-align: left;
-    line-height: 25px;
+p {
+    text-align: center;
+    line-height: 20px;
+    align-content: center; 
+    display: inline-block;
 }
 
 button {
@@ -73,19 +77,40 @@ button {
     text-transform: uppercase !important;
     letter-spacing: 2.5px !important;
     font-weight: 500 !important;
-    color: rgb(24, 10, 101) !important;
-    background-color: #fff !important;
+    color: #FFFFFF !important;
+    background-color: #439603 !important;
     border: none !important;
     border-radius: 45px !important;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.1) !important;
     transition: all 0.3s ease 0s !important;
     cursor: pointer !important;
     outline: none !important;
 }
 
 button:hover {
-    background-color: rgb(21, 255, 0) !important;
-    box-shadow: 0px 15px 20px rgba(15, 171, 41, 0.341) !important;
-    color: #fff !important;
-    transform: translateY(-7px) !important;
+    background-color: #439603 !important;
+    box-shadow: 0px 15px 20px #439603 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-5px) !important;
+}
+
+
+
+.numLetras{
+    width: 140px !important;
+    height: 100px !important;
+    align-content: center;    
+    display: inline-block;
+}
+
+.numPalavras{
+    width: 140px !important;
+    height: 100px !important;
+    display: inline-block;
+}
+
+.numTentativas{
+    width: 140px !important;
+    height: 100px !important;
+    display: inline-block;
 }
