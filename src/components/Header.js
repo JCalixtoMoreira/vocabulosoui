@@ -22,10 +22,9 @@ const Header = () => {
     return (
         <>
             <header >
-                {  window.location.pathname === '/settings' || window.location.pathname === '/help'
-                ? <HomeIcon onClick={navigateHome}/>
-                : <SettingsIcon onClick={navigateSettings}/>}
-                <HelpIcon onClick={navigateHelp} />
+                <HomeIcon onClick={navigateHome}/>
+                <SettingsIcon onClick={navigateSettings}/>
+                <HelpIcon onClick={navigateHelp}/>
             </header>
         </>
     )

@@ -13,7 +13,7 @@ const customStyles = {
     },
 };
 
-function ModalSettings({setColor, setIsOpen, modalIsOpen, cor}) {
+function ModalSettings({setColor, setIsOpen, modalIsOpen, cor, text}) {
 
     const handleChangeComplete = (color) => {
         setColor(color);
@@ -38,7 +38,7 @@ function ModalSettings({setColor, setIsOpen, modalIsOpen, cor}) {
             >
                 <SketchPicker color={cor} onChangeComplete={handleChangeComplete} />
             </Modal>
-            <div className="button"><button onClick={openModal} style={{ backgroundColor: cor.hex }} /> <p> Cor do Fundo </p></div>
+            <div className="button"><button onClick={openModal} style={{ backgroundColor: cor.hex }} /> <p> {text} </p></div>
         </div>
     )
 }

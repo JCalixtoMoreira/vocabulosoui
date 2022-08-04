@@ -31,10 +31,10 @@ const Settings = () => {
                     <FormControlLabel control={<Checkbox />} label="Modo Difícil (Apenas para 1 Palavra)" />
                     <FormControlLabel control={<Checkbox />} label="Modo Sandbox" />
                 </FormGroup>
-                <ModalSettings setColor={setFundo} setIsOpen={setIsOpenFundo} modalIsOpen={modalIsOpenFundo} cor={fundo}/>
-                <ModalSettings setColor={setLetra} setIsOpen={setIsOpenLetra} modalIsOpen={modalIsOpenLetra} cor={letra}/>
-                <ModalSettings setColor={setAcerto} setIsOpen={setIsOpenAcerto} modalIsOpen={modalIsOpenAcerto} cor={acerto}/>
-                <ModalSettings setColor={setAcertoPosicao} setIsOpen={setIsOpenAcertoPosicao} modalIsOpen={modalIsOpenAcertoPosicao} cor={acertoPosicao}/>
+                <ModalSettings setColor={setFundo} setIsOpen={setIsOpenFundo} modalIsOpen={modalIsOpenFundo} cor={fundo} text={"Cor de Fundo"}/>
+                <ModalSettings setColor={setLetra} setIsOpen={setIsOpenLetra} modalIsOpen={modalIsOpenLetra} cor={letra} text={"Cor de Letras"}/>
+                <ModalSettings setColor={setAcerto} setIsOpen={setIsOpenAcerto} modalIsOpen={modalIsOpenAcerto} cor={acerto} text={"Cor de Acerto"}/>
+                <ModalSettings setColor={setAcertoPosicao} setIsOpen={setIsOpenAcertoPosicao} modalIsOpen={modalIsOpenAcertoPosicao} cor={acertoPosicao} text={"Cor de Acerto e Posição"}/>
             </body>
             <Footer />
         </>
