@@ -1,0 +1,65 @@
+.logo {
+    margin-left: 600px;
+    margin-right: 600px;
+    text-align: center;
+    background-color: grey;
+    border-radius: 90px;
+    font-size: x-large;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+}
+
+.opcoes {
+    text-align: center;
+    font-size: xx-large;
+    background-color: grey;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 90px;
+}
+
+.opcoes .linha {
+    text-align: center;
+    color: black;
+}
+
+.opcoes .linha p {
+    background-color: rgb(167, 163, 163);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    position: inherit;
+}
+
+.opcoes .linha select {
+    font-size: x-large;
+    margin-top: auto;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(6, 195, 25);
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.opcoes .linha select option {
+    border-radius: 100px;
+    background-color: white;
+    font-size: x-large;
+    background-color: black;
+}
+
+button {
+    position: center;
+    background-color: green !important;
+    border-radius: 50px;
+}
+
+select{
+    background-color: blueviolet;
+}

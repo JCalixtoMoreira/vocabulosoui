@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import './Home.css';
 
 const optionsLetras = [{ value: '', lavel: '' }];
 for (var i = 3; i <= 20; i++) {
