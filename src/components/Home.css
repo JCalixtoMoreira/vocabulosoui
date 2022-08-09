@@ -38,12 +38,13 @@ body {
 .opcoes .linha select {
     font-size: x-large;
     margin-top: auto;
+    text-align: center;
     border-radius: 10px;
-    background-color: black;
-    color: rgb(6, 195, 25);
+    background-color: grey;
+    color: white;
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid black;
     padding: 10px;
 }
 
@@ -51,15 +52,12 @@ body {
     border-radius: 100px;
     background-color: white;
     font-size: x-large;
-    background-color: black;
+    background-color: grey;
 }
 
 button {
     position: center;
-    background-color: green !important;
+    background-color: black !important;
     border-radius: 50px;
-}
-
-select{
-    background-color: blueviolet;
+    color: white;
 }
