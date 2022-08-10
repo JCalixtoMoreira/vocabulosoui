@@ -1,0 +1,9 @@
+.tentativas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tentativas ul {
+    flex: 1;
+    list-style-type:none;
+}

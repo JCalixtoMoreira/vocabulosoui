@@ -1,0 +1,4 @@
+.navIcon {
+    transform: scale(1.6);
+    padding-right: calc(10px + 0.390625vw);
+}

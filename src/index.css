@@ -1,0 +1,9 @@
+:root {
+    --cinza: #fafbfb;
+}
+
+#root {
+    height: 100vh;
+    min-width: 90vw;
+    font-size: calc(13px + 0.390625vw);
+}

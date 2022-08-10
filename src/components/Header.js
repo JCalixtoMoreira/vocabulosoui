@@ -4,6 +4,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from "react-router-dom";
 
+import './Header.css';
+
 const Header = () => {
     const navigate = useNavigate();
 
@@ -22,9 +24,11 @@ const Header = () => {
     return (
         <>
             <header >
-                <HomeIcon onClick={navigateHome}/>
-                <SettingsIcon onClick={navigateSettings}/>
-                <HelpIcon onClick={navigateHelp}/>
+                <div className="icons">
+                <HomeIcon className="navIcon" onClick={navigateHome}/>
+                <SettingsIcon className="navIcon" onClick={navigateSettings}/>
+                <HelpIcon className="navIcon" onClick={navigateHelp}/>
+                </div>
             </header>
         </>
     )

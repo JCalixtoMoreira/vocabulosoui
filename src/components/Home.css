@@ -1,0 +1,39 @@
+.container {
+    padding-top: 5vh;
+    padding-left: 1vw;
+    min-height: 80vh;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 4vh;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.opcoes .linha {
+    margin-top: 14px;
+    width: 375px;
+}
+
+.square {
+    text-align: center;
+    height: 1em;
+    height: calc(1em + 2px);
+    width: 1em;
+    width: calc(1em + 2px);
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    padding: 5px;
+    margin: 0 3px;
+}
