@@ -10,3 +10,24 @@ p {
     padding: 0;
     border: none;
 }
+
+.opcoes {
+    text-align: center;
+    border-style: dotted;
+    border: 10pt;
+    border-color: black;
+}
+
+.colors {
+    text-align: center;
+    font-size: xx-large;
+}
+
+section {
+    border-style: solid;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: whitesmoke;
+}

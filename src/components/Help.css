@@ -1,0 +1,28 @@
+body{
+    padding-top: 5vh;
+    padding-left: 1vw;
+    min-height: 80vh;
+    background-color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+p{
+    text-align: center;
+}
+
+span{
+    text-align: center;
+    font-size: larger;
+    
+}
+
+strong{
+    background-color: wheat;
+    
+}
+
+ul{
+    border: 10px;
+    border-color: aquamarine;
+}
